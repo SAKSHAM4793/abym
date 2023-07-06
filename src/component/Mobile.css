@@ -1,0 +1,313 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* @font-face {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    src: url(../font/PTSansBold.ttf);
+} */
+
+body {
+    background: #6262620D;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+button:disabled {
+    background: #dddddd;
+  }
+.abt-us {
+    position: relative;
+}
+.abt-us,
+.abt-cont {
+    margin-top: 30%;
+    padding-top: 70%;
+    background: #fff;
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0px -5px 15px #6262621A;
+}
+.abt-img {
+    position: absolute;
+    top: 30px;
+    left: 70px;
+}
+.abt-cont {
+    box-shadow: 0px -5px 10px #0148991A;
+    margin-top: 0%;
+    padding-top: 6%;
+}
+
+.abt-us-01 {
+    text-align: center;
+}
+
+.abt-us-01 h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.tabs-cont .abt-img img {
+    width: 250px;
+}
+
+
+/*...... Start Tabs ......*/
+
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tabs .tab {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.tabs .tab.active,
+.tabs .tab:hover {
+    color: #fff;
+    background-color: #0054A5 !important;
+}
+
+.tab-content {
+    display: none;
+    max-width: 500px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    padding: 1rem 2rem;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* .....custom css..... */
+
+.tabs-cus {
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.tab-01 {
+    border-radius: 5px;
+    border: none !important;
+    padding: 10px 15px 7px 15px !important;
+}
+
+
+.tabs-cont {
+    padding: 0;
+    border: none;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.tabs-cont p {
+    width: 90%;
+    margin: auto;
+    color: #6F6F6F;
+    text-align: left;
+    font-size: 15px;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.tabs-cont img {
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+/*....... End Tabs .......*/
+
+/*.......Start Pop-Up ........*/
+
+
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+
+/*   This is the background overlay   */
+.backgroundOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: #0000009c;
+    z-index: 101;
+
+}
+
+/*   This is the Popup Window   */
+.delayedPopupWindow {
+    display: block;
+    width: 80%;
+    position: relativeabt-us;
+    border-radius: 20px;
+    margin: 26% 0 0 5%;
+    max-width: 480px;
+    background-color: #fff;
+    z-index: 102;
+    padding: 15px 20px 35px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+}
+.btl_pop{
+    overflow: hidden;
+}
+.btl_pop #questions {
+position: absolute;
+height: 100vh;
+display: flex;
+align-items: center;
+top: 0;
+bottom: 0;
+}
+#questions {
+    display: none;
+}
+.btl_pop .abt-us {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+/* Full-width input fields */
+.delayedPopupContent input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    appearance: none;
+    outline: none;
+}
+
+.f-conuntry {
+    position: absolute;
+    top: 30px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    border-right: 1px solid #ddd;
+    padding-right: 5px;
+}
+
+.otp-f {
+    margin: 10px 0;
+    position: relative;
+}
+
+.otp-f input {
+    padding-left: 90px;
+}
+
+.f-conuntry img {
+    padding: 2px 6px 2px 8px;
+}
+
+.lbl-start {
+    color: #DC0D1D;
+}
+
+.otp-btn,
+.verify-otp {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 10px;
+    background: #0054A5;
+    margin-top: 20px;
+}
+
+.verify-otp {
+    background: #0054A5;
+}
+
+.otp-code {
+    text-align: center;
+    display: flex;
+    /* margin-bottom: 15px; */
+}
+
+.code-n {
+    width: 25% !important;
+    margin: 10px !important;
+    padding: 20px !important;
+    text-align: center !important;
+    border-radius: 10px !important;
+    border: 1px solid #E0E1E4 !important;
+}
+
+.resnd {
+    /* margin-bottom: 25px; */
+    text-align: end;
+    font-size: 14px;
+    color: #0054A5;
+}
+
+.otp-prsnd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.otp-btn-1 {
+    background: #0054A5;
+}
+.map-gif {
+    margin-left: 70px;
+    width: 55%;
+}
+.cont-n {
+    width: 95%;
+    margin: auto;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+/* header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 14px #d4d4d4;
+} */
+.logo {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 14px #d4d4d4;
+    padding: 15px;
+}
